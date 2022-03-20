@@ -3,11 +3,9 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import * as patientAction from "../actions/patientActions";
 
-const url = process.env.REACT_APP_API_URL;
-
 async function getAllPatients() {
   return axios
-    .get(url + `/api/v1/patients`)
+    .get(`/api/v1/patients`)
     .then((response) => ({ result: response }))
     .catch((error) => ({ error }));
 }
@@ -44,7 +42,7 @@ async function registerPatient(
   beenInContact: boolean
 ) {
   return axios
-    .post(url + `/api/v1/patients/register`, {
+    .post(`/api/v1/patients/register`, {
       name,
       temperature,
       symptomsCheck,

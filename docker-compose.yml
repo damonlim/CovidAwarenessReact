@@ -8,15 +8,15 @@ services:
   covid-back:
     restart: on-failure
     build: 
-      context: ./CovidBack
+      context: ./backend
     ports:
       - "5000:5000"     
     container_name: api-server  
   covid-front:
     build:
-      context: ./CovidFront
+      context: ./frontend
     ports:
       - "3000:3000"
     stdin_open: true 
     volumes:
-      - ./covidfront:/usr/app/covidfront
+      - ./covidfront:/usr/app/frontend

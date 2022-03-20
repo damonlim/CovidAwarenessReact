@@ -1,0 +1,22 @@
+version: '3'
+services:
+  proxy:
+    build:
+      context: ./proxy 
+    ports:
+      - 80:80  
+  covid-back:
+    restart: on-failure
+    build: 
+      context: ./CovidBack
+    ports:
+      - "5000:5000"     
+    container_name: api-server  
+  covid-front:
+    build:
+      context: ./CovidFront
+    ports:
+      - "3000:3000"
+    stdin_open: true 
+    volumes:
+      - ./covidfront:/usr/app/covidfront

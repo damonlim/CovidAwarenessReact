@@ -34,7 +34,6 @@ NOTE: In case you have Docker container with name "api-server", it may conflict 
 ### From AWS Cloud
 An environment is setup in AWS cloud running with Docker container with url below:
 ```
-http://175.41.152.51
+The site is currently down for maintenance.
 ```
-Due to cost incurred running on public cloud, the service will be brought down on March 23, 2022 (or sooner). I will update this note if it is brought down before the date.\
-Happy review.
+

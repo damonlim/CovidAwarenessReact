@@ -34,6 +34,6 @@ NOTE: In case you have Docker container with name "api-server", it may conflict 
 ### From AWS Cloud
 An environment is setup in AWS cloud running with Docker container with url below:
 ```
-The site is currently down for maintenance.
+http://13.215.96.117
 ```
 
